@@ -173,6 +173,8 @@ const profiles = [
     genshin: true, 
     honkai_star_rail: true, 
     honkai_3: false, 
+    tears_of_themis: false, 
+    zenless_zone_zero: false, 
     accountName: "HuTao" }
 ];
 
@@ -194,11 +196,15 @@ const profiles = [
     genshin: true, 
     honkai_star_rail: false, 
     honkai_3: false, 
+    tears_of_themis: false, 
+    zenless_zone_zero: false, 
     accountName: "accountA" },
   { token: "account_mid_v2=456qwertyu_hi; account_id_v2=28XXXXX42; ltoken_v2=v2_GENSHINXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX5566; ltmid_v2=456qwertyu_hi; ltuid_v2=28XXXXX42;", 
     genshin: false, 
     honkai_star_rail: false, 
     honkai_3: true, 
+    tears_of_themis: false, 
+    zenless_zone_zero: false, 
     accountName: "accountB" }
 ];
 
