@@ -40,6 +40,8 @@ const profiles = [
     genshin: true, 
     honkai_star_rail: true, 
     honkai_3: false, 
+    tears_of_themis: false, 
+    zenless_zone_zero: false, 
     accountName: "YOUR NICKNAME" // Note: This doesn't have to be the actual hoyo account name, it's a name for this profile in case this script fails and you need to know for which profile it failed for.
   }
 ];
@@ -82,7 +84,19 @@ const profiles = [
    If you want, set it to true. If not, please set it to false.  
    If you do not play Honkai Impact 3rd, or your account is not bound to a uid, please set it to false.
 
-5. **accountName** - Please enter your customized nickname.
+5. **tears_of_themis**
+
+   Whether to enable auto check in for Tears of Themis.  
+   If you want, set it to true. If not, please set it to false.  
+   If you do not play Tears of Themis, or your account is not bound to a uid, please set it to false.
+
+6. **zenless_zone_zero**
+
+   Whether to enable auto check in for Zenless Zone Zero.  
+   If you want, set it to true. If not, please set it to false.  
+   If you do not play Zenless Zone Zero, or your account is not bound to a uid, please set it to false.
+
+7. **accountName** - Please enter your customized nickname.
 
    Please enter a customized nickname for you to recognize the account.
 
