@@ -222,5 +222,5 @@ const telegramBotToken = "6XXXXXXXXX:AAAAAAAAAAXXXXXXXXXX8888888888Peko"
 2023-04-27 Add switch for Discord notify.  
 2023-05-12 Update get token process[#2](https://github.com/canaria3406/hoyolab-auto-sign/pull/2).  
 2023-05-12 Add Telegram notify support[#3](https://github.com/canaria3406/hoyolab-auto-sign/pull/3).  
-2023-05-13 Support multiple HoYoLAB accounts[#4](https://github.com/canaria3406/hoyolab-auto-sign/pull/4)
-2024-07-07 Project Forked, added safety and support for ZZZ & Tears of Themis
+2023-05-13 Support multiple HoYoLAB accounts[#4](https://github.com/canaria3406/hoyolab-auto-sign/pull/4)  
+2024-07-06 Project Forked, added safety and support for ZZZ & Tears of Themis
