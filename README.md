@@ -9,8 +9,11 @@
     <br><a href="/README_zh-tw.md">繁體中文</a>　<b>English</b>　<a href="/README_ru-ru.md">Русский</a>
 </p>
 
+This is a fork of [hoyolab-auto-sign](https://github.com/canaria3406/hoyolab-auto-sign) that does an auto checkin at a random time between 11AM and 9PM\
+For the setup, the time of the trigger has changed, please look at the [Setup](https://github.com/Ran-Mewo/hoyolab-auto-sign-safe/#setup) section
+
 A lightweight, secure, and free script that automatically collect HoYoLAB daily check in rewards.  
-Supports Genshin Impact, Honkai Impact 3rd, and Honkai: Star Rail. Support multiple accounts.
+Supports Genshin Impact, Honkai Impact 3rd, Honkai: Star Rail and Zenless Zone Zero. Support multiple accounts.
 
 ## Features
 * **Lightweight** - The script only requires minimal configuration and is only 90 lines of code.
@@ -20,14 +23,14 @@ Supports Genshin Impact, Honkai Impact 3rd, and Honkai: Star Rail. Support multi
 
 ## Setup
 1. Go to [Google Apps Script](https://script.google.com/home/start) and create a new project with your custom name.
-2. Select the editor and paste the code( [Discord version](https://github.com/canaria3406/hoyolab-auto-sign/blob/main/src/main-discord.gs) / [Telegram version](https://github.com/canaria3406/hoyolab-auto-sign/blob/main/src/main-telegram.gs) ). Refer to the instructions below to configure the config file and save it.
-3. Select "main" and click the "Run" button at the top.  
+2. Select the editor and paste the code( [Discord version](https://github.com/Ran-Mewo/hoyolab-auto-sign-safe/blob/main/src/main-discord.gs) / [Telegram version](https://github.com/Ran-Mewo/hoyolab-auto-sign-safe/blob/main/src/main-telegram.gs) ). Refer to the instructions below to configure the config file and save it.
+3. Select "checkIn" and click the "Run" button at the top.  
    Grant the necessary permissions and confirm that the configuration is correct (Execution started > completed).
 4. Click the trigger button on the left side and add a new trigger.  
    Select the function to run: main  
    Select the event source: Time-driven  
    Select the type of time based trigger: Day timer  
-   Select the time of day: recommended to choose any off-peak time between 0900 to 1500.
+   Select the time of day: It's recommended to select **10AM to 11AM** but any time between 10PM (previous day) to 11AM (current day) works.
 
 ## Configuration
 
@@ -37,7 +40,8 @@ const profiles = [
     genshin: true, 
     honkai_star_rail: true, 
     honkai_3: false, 
-    accountName: "YOUR NICKNAME" }
+    accountName: "YOUR NICKNAME" // Note: This doesn't have to be the actual hoyo account name, it's a name for this profile in case this script fails and you need to know for which profile it failed for.
+  }
 ];
 ```
 
@@ -80,7 +84,7 @@ const profiles = [
 
 5. **accountName** - Please enter your customized nickname.
 
-   Please enter your customized HoYoLAB or in-game nickname here.
+   Please enter a customized nickname for you to recognize the account.
 
 </details>
 
